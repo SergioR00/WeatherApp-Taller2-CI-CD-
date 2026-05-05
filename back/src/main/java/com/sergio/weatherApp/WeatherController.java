@@ -43,7 +43,7 @@ public class WeatherController {
         }
     }
     @GetMapping("/health")
-    Map<String, Object> health() {
+    public Map<String, Object> health() {
         return Map.of("status", "ok");
     }
 }
